@@ -98,7 +98,7 @@ Here is the code you will use:
 ```
 #### And other code that you can find in Firebase singleton
 
-#### (Firebase Documentation(to understand what functions and events are for))[https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics#public-void-setanalyticscollectionenabled-boolean-enabled]
+#### [Firebase Documentation(to understand what functions and events are for)](https://firebase.google.com/docs/reference/android/com/google/firebase/analytics/FirebaseAnalytics#public-void-setanalyticscollectionenabled-boolean-enabled)
 
 ## Images
 
