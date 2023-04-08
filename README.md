@@ -102,6 +102,6 @@ Here is the code you will use:
 
 ## Images
 
-![img](https://github.com/Qumico/FirebaseAnalytics/blob/main/Resources/preview1.png)
-![img2](https://github.com/Qumico/FirebaseAnalytics/blob/main/Resources/preview2.png)
+![img](https://raw.githubusercontent.com/Qumico/FirebaseAnalytics/main/gdignore/preview1.png)
+![img2](https://raw.githubusercontent.com/Qumico/FirebaseAnalytics/main/gdignore/preview2.png)
 
