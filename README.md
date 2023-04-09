@@ -7,7 +7,11 @@ This plugin is a wrapper of an android plugin. There is a Firebase singleton tha
 
 ## Installation
 1. Install the android build template(Project > ...). This will create an android folder in the file system
-2. Godot > Export Settings > Android > MinSDK 23, set unique_name(example org.godotengine.firebasetest), Custom Build - true, Permissions - Access Network State, Internet
+2. Godot > Export Settings > Android > ... 
+    * MinSDK: 23
+    * unique_name(example): org.godotengine.firebasetest (It should be the same in godot and firebase)
+    * Custom Build: true
+    * Permissions: Access Network State, Internet, Wake Lock
 3. Transfer files from the "ForAndroidPluginFolder" folder to the android/plugins folder. This will add a plugin for android. Enable, Export > Android > Plugins > ...
 4. In the android\build folder, in the build file.gradle change code and sync (android studio)
 ``` java
