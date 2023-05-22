@@ -28,24 +28,25 @@ enum FirebaseParams {
 	shipping, shipping_tier, source, start_date, success, tax, term, transaction_id, travel_class, value, virtual_currency_name
 }
 
-# Представляет информацию профиля пользователя в базе данных пользователей вашего проекта Firebase. 
-# Он также содержит вспомогательные методы для изменения или извлечения информации профиля, 
-# а также для управления состоянием аутентификации этого пользователя.
-class FirebaseUser:
-	var isNull = null
-	func printData():
-		print("FirebaseUser: isNull: %s"%[isNull])
-	func make(data:Dictionary):
-		isNull = data.isNull
+# В плагин планировалось добавить аутентификацию, она не добавлена и добавление отменено. В любом случае аналитика была протестирована и работает
+## Представляет информацию профиля пользователя в базе данных пользователей вашего проекта Firebase. 
+## Он также содержит вспомогательные методы для изменения или извлечения информации профиля, 
+## а также для управления состоянием аутентификации этого пользователя.
+#class FirebaseUser:
+#	var isNull = null
+#	func printData():
+#		print("FirebaseUser: isNull: %s"%[isNull])
+#	func make(data:Dictionary):
+#		isNull = data.isNull
 
 signal returnAppInstanceId(appId)
 signal getInstance
 signal getSessionId(sessionId)
 
-# AUTHENTICATION
 
-var firebaseUser:FirebaseUser = FirebaseUser.new()
-enum signInButtonType { FirebaseUI = 0 }
+
+#var firebaseUser:FirebaseUser = FirebaseUser.new()
+#enum signInButtonType { FirebaseUI = 0 }
 
 signal getCurrentUserSignal
 
@@ -85,9 +86,11 @@ func getAppInstanceId():
 func getSessionId():
 	firebase.getSessionId()
 
-# event: int(enum FirebaseEvent)/String, params: Dictionary
-# пример
+
+# example
 # logEvent("testEvent", {testParam1": {"value": "stringParam", "type": "string"}, "testParam2": {...}, ... })
+# event: int(enum FirebaseEvent)/String
+# params: Dictionary
 func logEvent(event, params: Dictionary): 
 #	ЗАПИСЬ EVENT И EVENTID
 #   eventID если event !custom

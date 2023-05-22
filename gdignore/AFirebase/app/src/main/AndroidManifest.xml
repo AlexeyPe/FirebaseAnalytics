@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<!--    для получения контекста в AFirebase.java, для создания экземпляра FirebaseAnalytics-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application>
+        <meta-data
+            android:name="org.godotengine.plugin.v1.AFirebase"
+            android:value="com.example.afirebase.AFirebase"
+
+
+            />
+<!--        tools:remove="android:appComponentFactory"-->
+<!--        tools:targetApi="p"-->
+        <!--        tools добавлены из за аутентификации-->
+    </application>
+
+</manifest>

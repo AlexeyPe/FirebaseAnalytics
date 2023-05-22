@@ -3,7 +3,7 @@ extends EditorPlugin
 
 
 func _enter_tree():
-	add_autoload_singleton("Firebase", "res://addons/Firebase/Scripts/Firebase.gd")
+	add_autoload_singleton("Firebase", "res://addons/FirebaseAnalytics/Scripts/Firebase.gd")
 	pass
 
 
