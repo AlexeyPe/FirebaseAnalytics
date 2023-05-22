@@ -4,6 +4,7 @@ Firebase Analytics for Android, Godot 3.5.1
 
 This plugin is a wrapper of an android plugin. There is a Firebase singleton that calls methods in the AFirebase android plugin (This plugin contains the AFirebase plugin inside)
 
+[Android pluguin (java) src (/gdignore/AFirebase)](https://github.com/Qumico/FirebaseAnalytics/tree/main/gdignore/AFirebase)
 
 ## 📚Wiki
 
